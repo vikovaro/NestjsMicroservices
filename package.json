@@ -1,0 +1,15 @@
+{
+  "name": "nestjs-rabbitmq-demo",
+  "version": "1.0.0",
+  "description": "Демонстрация микросервисов NestJS с RabbitMQ",
+  "scripts": {
+    "install-services": "cd service1 && npm install && cd ../service2 && npm install",
+    "start-service1": "cd service1 && npm run start",
+    "start-service2": "cd service2 && npm run start"
+  },
+  "private": true,
+  "workspaces": [
+    "service1",
+    "service2"
+  ]
+}
